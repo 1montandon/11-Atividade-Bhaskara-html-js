@@ -1,5 +1,5 @@
 function calcularX(){
-    const a = Number(document.getElementById('numeroA').value);
+    const a = document.getElementById('numeroA').value;
     const b = document.getElementById('numeroB').value;
     const c = document.getElementById('numeroC').value;
 
@@ -8,11 +8,14 @@ function calcularX(){
     const bhaskaraMais = (-b +Math.sqrt(delta)) / (2*a);
     const bhaskaraMenos = (-b -Math.sqrt(delta)) / (2 * a);
 
-    if (a === "0" ){
+    if (a == "0" ){
         document.getElementById('resultado').innerHTML = `Não é equação de primeiro grau`
     }
-    else if(delta === 0){
+    else if(delta == "0"){
         document.getElementById('resultado').innerHTML = `Bhaskara = ${bhaskaraNeutra}`;
+    }
+    else if(delta < "0"){
+        document.getElementById('resultado').innerHTML = `Não e possivel fazer raiz de delta negativo`;
     }
     else{
         document.getElementById('resultado').innerHTML = `Bhaskara + = ${bhaskaraMais.toFixed(2)} <br/>

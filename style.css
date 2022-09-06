@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+*{
+    font-family: 'Prompt', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    border-radius: 15px;
+    box-shadow: 2px 2px blue;
+    transition: 0.5s;
+}
+button:hover{
+    border-radius: 20px;
+    box-shadow: 5px 5px pink;
+}
